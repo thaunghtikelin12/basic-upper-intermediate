@@ -1,10 +1,10 @@
- git --version
- cd basic-upper-intermediate
- git status
- git add note_for_basic.txt
- git config --global user.name "thaunghtikelin12"
- git config --global user.email "klin0330@gamil.com"
- git commit -m "First Commit"
- git push -u origin main
+git --version
+cd basic-upper-intermediate
+git status
+git add note_for_basic.txt
+git config --global user.name "thaunghtikelin12"
+git config --global user.email "klin0330@gamil.com"
+git commit -m "First Commit"
+git push -u origin main
 
 
