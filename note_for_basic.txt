@@ -1,10 +1,101 @@
 git --version
 cd basic-upper-intermediate
 git status
-git add note_for_basic.txt
+
+git add note_for_basic.txt/git add ./git rm private -r
 git config --global user.name "thaunghtikelin12"
 git config --global user.email "klin0330@gamil.com"
-git commit -m "First Commit"
+git commit -m "First Commit"/git commit -m "local commit"/git commit -m "Ignore Lesson"/git commit -m "Local changes"
 git push -u origin main
+
+
+git clone[url]
+
+cd local-folder
+git init [reporsitory_name]
+-create repository
+-enter three command
+
+cd local-folder
+git pull origin main
+
+
+
+git reset[files ]
+git commit -m
+git commit-a
+git push
+git pull
+
+_____________________________________________________________________________________________
+
+
+klin0@DESKTOP-1P3NVFP MINGW64 ~/OneDrive/Desktop/local-folder (main)
+$ git branch product
+
+klin0@DESKTOP-1P3NVFP MINGW64 ~/OneDrive/Desktop/local-folder (main)
+$ git checkout product
+Switched to branch 'product'
+
+klin0@DESKTOP-1P3NVFP MINGW64 ~/OneDrive/Desktop/local-folder (product)
+$ touch myproduct.txt
+
+klin0@DESKTOP-1P3NVFP MINGW64 ~/OneDrive/Desktop/local-folder (product)
+$ git status
+On branch product
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        myproduct.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+klin0@DESKTOP-1P3NVFP MINGW64 ~/OneDrive/Desktop/local-folder (product)
+$ git add .
+
+klin0@DESKTOP-1P3NVFP MINGW64 ~/OneDrive/Desktop/local-folder (product)
+$ git commit -m "add my product"
+[product c0260fd] add my product
+ 1 file changed, 1 insertion(+)
+ create mode 100644 myproduct.txt
+
+klin0@DESKTOP-1P3NVFP MINGW64 ~/OneDrive/Desktop/local-folder (product)
+$ git status
+On branch product
+nothing to commit, working tree clean
+
+klin0@DESKTOP-1P3NVFP MINGW64 ~/OneDrive/Desktop/local-folder (product)
+$ cd main
+bash: cd: main: No such file or directory
+
+klin0@DESKTOP-1P3NVFP MINGW64 ~/OneDrive/Desktop/local-folder (product)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+klin0@DESKTOP-1P3NVFP MINGW64 ~/OneDrive/Desktop/local-folder (main)
+$  git marge product
+git: 'marge' is not a git command. See 'git --help'.
+The most similar command is
+        merge
+klin0@DESKTOP-1P3NVFP MINGW64 ~/OneDrive/Desktop/local-folder (main)
+$ git merge product
+Updating 666c1a1..c0260fd
+Fast-forward
+ myproduct.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 myproduct.txt
+
+klin0@DESKTOP-1P3NVFP MINGW64 ~/OneDrive/Desktop/local-folder (main)
+$ git checkout product
+Switched to branch 'product'
+
+klin0@DESKTOP-1P3NVFP MINGW64 ~/OneDrive/Desktop/local-folder (product)
+$ git status
+On branch product
+nothing to commit, working tree clean
+
+klin0@DESKTOP-1P3NVFP MINGW64 ~/OneDrive/Desktop/local-folder (product)
+$
+
 
 
