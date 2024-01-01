@@ -1,7 +1,7 @@
 ### Data Type
 
 ## String 
-#method,slicing,format
+#method,slicing,format,*extended unpacking
 # print("hello world")
 # print("The resutl of {0} and {1} is \n{2}".format(1,2,1+2))
 
@@ -23,7 +23,7 @@
 #_________________________________________________________________
 
 ##Array
-#Methods,Slicing(start:end:step),index,changeable
+#Methods,Slicing(start:end:step),index,changeable,*extended unpacking
 # lis1=['abb',2,1.23,1+5j,True,False] *****Ordered,Changeable,Allow Duplicates,The list() Constructor
 # print(lis1[::-1])                        ####note the double round-brackets
 
@@ -33,7 +33,7 @@
 # print(AA)
 
 #Set items are unordered, unchangeable, and do not allow duplicate values.
-# set1={1,2,3,4,5}                    *****Unordered,Unchangeable,Duplicates Not Allowed,The set() Constructor
+# set1={1,2,3,4,5}                    *****,UnchangeUnorderedable,Duplicates Not Allowed,The set() Constructor
 # set2={3,4,5,6,7,8}                        ####note the double round-brackets
 # print(set1-set2)#| , & , set1 - set2 , set2 - set1 , set1^set2
 
@@ -142,10 +142,8 @@
 # ** pass ** Statement
 #( put in the pass statement to avoid getting an error.)
 
+#________________________________________________________________________________________________
 
-
-
-print("hello world")
 
 
 
