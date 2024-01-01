@@ -33,6 +33,8 @@
 # print(myFun.__annotations__)
 # print(myFun.__doc__)
 #_____________________________________________________________________________________________________________________________________
-
-
-
+##Anonymus Function or Lambda Function
+# objj=lambda x,y: x*y
+# print(objj(2,3))
+x=lambda x,y,*args,z,**kwargs:(x,y,args,z,kwargs)
+print(x('a','b','ab','ba',z='holy_cow',aa='hello',bb='world'))
