@@ -34,7 +34,73 @@
 # print(myFun.__doc__)
 #_____________________________________________________________________________________________________________________________________
 ##Anonymus Function or Lambda Function
+#lambda arguments : expression
 # objj=lambda x,y: x*y
 # print(objj(2,3))
-x=lambda x,y,*args,z,**kwargs:(x,y,args,z,kwargs)
-print(x('a','b','ab','ba',z='holy_cow',aa='hello',bb='world'))
+# x=lambda x,y,*args,z,**kwargs:(x,y,args,z,kwargs)
+# print(x('a','b','ab','ba',z='holy_cow',aa='hello',bb='world'))
+#__________________________________________________________________
+##Higher Oreder function
+# def myFun(fn,x,y):
+#     return fn(x,y)
+# def multiply(x,y):
+#     return x*y
+# print(myFun(multiply,3,5))
+# def myFun(fn,x,y):
+#     return fn(x,y)
+# print(myFun(lambda a,b:a*b,3,5))
+#________________________________________________________________
+##Function Introspection and Inspectomonitor
+# import inspect
+# from inspect import isfunction,ismethod
+# def myFun(fn,x,y):
+#     """Body of function"""
+#     return fn(x,y)
+# myFun.__name2__="Function name 2"
+# print(myFun.__annotations__)
+# print(myFun.__doc__)
+# print(myFun.__dir__)
+# print(dir(myFun))
+# print(myFun.__name2__)
+# print(myFun.__name__)
+# print(myFun.__defaults__)
+# print(myFun.__kwdefaults__)
+# print(myFun.__code__.co_varnames)
+# print(myFun.__code__.co_argcount)
+# print(inspect.getsource(myFun))
+# print(inspect.getcomments(myFun))
+# print(inspect.getmodule(print))
+# print(isfunction(myFun))
+# print(ismethod(myFun))
+#________________________________________________________
+##Callable
+from typing import Any
+
+
+class myClass:
+    def __init__(self,x=0):
+        print("myClass method")
+        self.counter=x
+        
+    def __call__(self,x=11):
+        print("Callmethod")
+        self.counter+=x
+        
+    def myMethod(self,z=1):
+        print("myMethod")
+        self.counter+=z
+        
+ObjInit=myClass()
+ObjCall=myClass()
+objMethod=myClass()
+
+myClass.__init__(ObjInit,20)
+myClass.__call__(ObjCall,10)
+myClass.myMethod(objMethod,30)
+ObjCall()
+print(ObjCall.counter)
+print(callable(myClass.myMethod))
+ObjCall()
+print(objMethod.counter)
+objMethod()
+print(objMethod.counter)
