@@ -74,33 +74,31 @@
 # print(ismethod(myFun))
 #________________________________________________________
 ##Callable
-from typing import Any
-
-
-class myClass:
-    def __init__(self,x=0):
-        print("myClass method")
-        self.counter=x
+# from typing import Any
+# class myClass:
+#     def __init__(self,x=0):
+#         print("myClass method")
+#         self.counter=x
         
-    def __call__(self,x=11):
-        print("Callmethod")
-        self.counter+=x
+#     def __call__(self,x=11):
+#         print("Callmethod")
+#         self.counter+=x
         
-    def myMethod(self,z=1):
-        print("myMethod")
-        self.counter+=z
+#     def myMethod(self,z=1):
+#         print("myMethod")
+#         self.counter+=z
         
-ObjInit=myClass()
-ObjCall=myClass()
-objMethod=myClass()
-
-myClass.__init__(ObjInit,20)
-myClass.__call__(ObjCall,10)
-myClass.myMethod(objMethod,30)
-ObjCall()
-print(ObjCall.counter)
-print(callable(myClass.myMethod))
-ObjCall()
-print(objMethod.counter)
-objMethod()
-print(objMethod.counter)
+# ObjInit=myClass()
+# ObjCall=myClass()
+# objMethod=myClass()
+# myClass.__init__(ObjInit,20)
+# myClass.__call__(ObjCall,10)
+# myClass.myMethod(objMethod,30)
+# ObjCall()
+# print(ObjCall.counter)
+# print(callable(myClass.myMethod))
+# ObjCall()
+# print(objMethod.counter)
+# objMethod()
+# print(objMethod.counter)
+#_______________________________________________
